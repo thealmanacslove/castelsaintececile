@@ -1,11 +1,14 @@
 /* General Styles */
 body {
-  background-color: black;
+  background-color: #13171f;
   color: white;
   text-align: center;
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+}
+a{
+    color: white;
 }
 /*navbar*/
 .nav-link {
@@ -22,6 +25,9 @@ body {
     border: none;
     box-shadow: none;
 }
+.toggler-custom{
+    border-color: white;
+}
 
 .nav-link {
   padding: 0.5rem 1rem;
@@ -29,6 +35,8 @@ body {
   color: white;
   text-align: right;
 }
+
+
 
 /* Media query for smaller screens to make the navbar responsive *//*
 @media (max-width: 992px) {
@@ -149,7 +157,7 @@ font-style: normal;
 
 .carousel-caption {
   position: static;
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+  /*background-color: #010d21; Transparent dark background */
   color: white;
   padding: 0.5rem;
   font-size: 0.9rem;
