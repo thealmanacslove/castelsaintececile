@@ -1,0 +1,89 @@
+/* General styles */
+body {
+  background-color: black; /* Keep background black */
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 5rem; /* Adjust spacing for navbar */
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  color: #d3d3d3; /* Softer gray for contrast */
+}
+
+blockquote footer {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Image hover effect */
+.image-link img {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid white;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.image-link img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  border-color: #f8f9fa; /* Change border to lighter gray */
+  cursor: pointer;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #222; /* Keep navbar dark */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  width: 24px;
+  height: 2px;
+  display: block;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  background-color: white;
+  width: 24px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -6px;
+}
+
+.navbar-toggler-icon::after {
+  top: 6px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  text-align: right;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
