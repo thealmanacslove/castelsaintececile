@@ -23,7 +23,7 @@ body {
   max-width: 800px;
   margin: 5rem auto 3rem;
   padding: 1rem;
-  text-align: center;
+  text-align: justify;
 }
 
 
@@ -32,10 +32,18 @@ h1 {
   font-size: 2.5rem;
   margin-top: 5rem; /* Space for navbar */
 }
+#welcome{
+    font-family: "Instrument Serif", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 3.5rem;
+}
 
 blockquote {
-  font-style: italic;
-  font-size: 1.2rem;
+  font-family: "Instrument Serif", serif;
+font-weight: 400;
+font-style: normal;
+  font-size: 1rem;
   margin: 2rem auto;
   max-width: 600px;
   color: #d3d3d3;
@@ -148,4 +156,17 @@ p {
   .carousel-caption {
     font-size: 0.8rem;
   }
+}
+
+/*google font */
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
 }
