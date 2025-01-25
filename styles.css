@@ -7,8 +7,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
+/*navbar*/
+.nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  text-align: right;
+}
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
