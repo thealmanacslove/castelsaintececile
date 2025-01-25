@@ -1,6 +1,6 @@
-/* General styles */
+/* General Styles */
 body {
-  background-color: black; /* Keep background black */
+  background-color: black;
   color: white;
   text-align: center;
   font-family: 'Arial', sans-serif;
@@ -8,9 +8,29 @@ body {
   padding: 0;
 }
 
+/* Navbar */
+.navbar {
+  background-color: #222;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* Main Content */
+.container {
+  max-width: 800px;
+  margin: 5rem auto 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
 h1 {
   font-size: 2.5rem;
-  margin-top: 5rem; /* Adjust spacing for navbar */
+  margin-top: 5rem; /* Space for navbar */
 }
 
 blockquote {
@@ -18,72 +38,114 @@ blockquote {
   font-size: 1.2rem;
   margin: 2rem auto;
   max-width: 600px;
-  color: #d3d3d3; /* Softer gray for contrast */
+  color: #d3d3d3;
 }
 
-blockquote footer {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #aaa;
+/* Headings */
+h1, h2 {
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
 }
 
-/* Image hover effect */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+/* Paragraph text */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
 .image-link img {
   margin-top: 2rem;
   max-width: 100%;
   height: auto;
   border: 2px solid white;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .image-link img:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  border-color: #f8f9fa; /* Change border to lighter gray */
+  transform: scale(1.05);
   cursor: pointer;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #222; /* Keep navbar dark */
+/* Timeline */
+.timeline {
+  text-align: left;
+  margin-top: 2rem;
 }
 
-.navbar-toggler {
-  border: none;
+.timeline p {
+  margin: 0.5rem 0;
 }
 
-.navbar-toggler-icon {
-  background-color: white;
-  width: 24px;
-  height: 2px;
-  display: block;
-  position: relative;
-}
-
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  content: '';
-  background-color: white;
-  width: 24px;
-  height: 2px;
-  display: block;
-  position: absolute;
-  left: 0;
-}
-
-.navbar-toggler-icon::before {
-  top: -6px;
-}
-
-.navbar-toggler-icon::after {
-  top: 6px;
-}
-
-.navbar-nav .nav-link {
-  color: white;
-  text-align: right;
-}
-
-.navbar-nav .nav-link:hover {
+.timeline .date {
+  font-weight: bold;
   color: #f8f9fa;
-  text-decoration: underline;
+}
+
+/* Carousel */
+.carousel {
+  margin: 2rem auto;
+  max-width: 600px; /* Restrict carousel width */
+}
+
+.carousel img {
+  max-height: 400px; /* Set a maximum height for the images */
+  object-fit: contain;
+  border-radius: 0px; /* Softly rounded corners */
+}
+
+.carousel-caption {
+  position: static;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: contrast();; /* Makes controls white */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Minimalist controls */
+}
+
+.carousel-inner {
+  /* border: 2px solid white; White border around carousel */
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    margin: 4rem auto 2rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel img {
+    max-height: 300px;
+  }
+
+  .carousel-caption {
+    font-size: 0.8rem;
+  }
 }
