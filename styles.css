@@ -147,14 +147,14 @@ font-style: normal;
   color: #f8f9fa;
 }
 
-/* Carousel */
+/* Carousel about*/
 .carousel {
   margin: 2rem auto;
   max-width: 600px; /* Restrict carousel width */
 }
 
 .carousel img {
-  max-height: 400px; /* Set a maximum height for the images */
+  max-height: 500px; /* Set a maximum height for the images */
   object-fit: contain;
   border-radius: 0px; /* Softly rounded corners */
 }
@@ -182,6 +182,7 @@ font-style: normal;
   /* border: 2px solid white; White border around carousel */
   border-radius: 10px;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -241,6 +242,7 @@ body {
 footer {
   margin-top: 20px; /* Adds space above the footer */
   padding: 20px 0; /* Optional: Adjusts footer padding */
+  padding-top: 2rem;
 }
 
 .contact-content {
@@ -252,12 +254,4 @@ footer {
   font-family: "Instrument Serif", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*footer*/
-footer{
-    padding-top: 2rem;
-}
-#contactpage{
-    height:100%;
 }
