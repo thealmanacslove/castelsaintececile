@@ -215,6 +215,39 @@ font-style: normal;
   font-style: normal;
 }
 
+/*contact*/
+.contact-image-container {
+  display: flex; /* Centers the image container */
+  justify-content: center; /* Horizontally centers the image */
+  align-items: center; /* Vertically centers (if container height is defined) */
+  margin: 20px auto; /* Adds vertical spacing (adjust if needed) */
+  padding: 0; /* Ensures no extra padding around the container */
+  width: 100%; /* Ensures the container spans the full width */
+}
+
+.contact-image-container img {
+  max-width: 90%; /* Restricts image width to fit within the viewport */
+  max-height: 80vh; /* Restricts image height to avoid overflow */
+  object-fit: contain; /* Keeps the aspect ratio intact */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin-top: 20px; /* Adds space above the footer */
+  padding: 20px 0; /* Optional: Adjusts footer padding */
+}
+
+.contact-content {
+  margin-bottom: 20px; /* Adds space below the text above the image */
+}
+
+
 .instrument-serif-regular-italic {
   font-family: "Instrument Serif", serif;
   font-weight: 400;
