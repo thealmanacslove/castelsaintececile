@@ -207,7 +207,9 @@ font-style: normal;
     margin-bottom: 30px;
     margin: 30px;
   }
-
+blockquote{
+    font-family: Buda;
+}
   .carousel img {
     max-height: 300px;
   }
