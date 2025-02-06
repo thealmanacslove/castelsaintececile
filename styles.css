@@ -260,3 +260,53 @@ footer {
   font-weight: 400;
   font-style: italic;
 }
+
+/* General Styles */
+body {
+  background-color: #13171f; /* Dark background */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Article List Item */
+.article-item {
+  display: block;
+  background: #1c1f2a; /* Slightly lighter background for contrast */
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #2a2f3a; /* Subtle border */
+  margin-bottom: 20px;
+}
+
+.article-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Thumbnail Image */
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Article Info */
+.article-info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.article-info p {
+  font-size: 14px;
+  color: #bbb; /* Slightly lighter text for the date */
+}
