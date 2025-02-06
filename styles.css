@@ -203,6 +203,9 @@ font-style: normal;
 
   h2 {
     font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    margin: 30px;
   }
 
   .carousel img {
@@ -242,6 +245,9 @@ font-style: normal;
 body {
   margin: 0;
   padding: 0;
+  background-color: #13171f; /* Dark background */
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 footer {
@@ -262,16 +268,9 @@ footer {
 }
 
 /* General Styles */
-body {
-  background-color: #13171f; /* Dark background */
-  color: white;
-  font-family: Arial, sans-serif;
-}
 
-h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
+
+
 
 /* Article List Item */
 .article-item {
